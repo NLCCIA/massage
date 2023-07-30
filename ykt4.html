@@ -11,9 +11,9 @@
         var text = "";
         for(var i=0; i<1; i++){
             aka = data[i].Name ;
-            shiro = data[i+1].TimeStamp
+            shiro = data[i+1].Timestamp;
         }
-        //d3.select("#comments").html(aka);
+        d3.select("#comments").html(aka);
         d3.select("#comments").html(shiro);
     });
          d3.select("#comments").html(aka);
