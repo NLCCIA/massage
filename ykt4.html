@@ -10,10 +10,13 @@
     d3.csv("https://docs.google.com/spreadsheets/d/1lq4zbQaxSPEaywdGdYc2P9TJwZwpAsUbGOGZ_qbC1Qg/export?format=csv&range=A3:D", function(error, data){
         var text = "";
         for(var i=0; i<1; i++){
-            text = data[i].Name ;
+            aka = data[i].Name ;
+            shiro = data[i+1].TimeStamp
         }
-        d3.select("#comments").html(text);
+        d3.select("#comments").html(aka);
     });
+        console.log(aka)
+        d3.select("#comments").html(aka);
     </script>
 
 </body>
