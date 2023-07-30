@@ -10,7 +10,7 @@
     d3.csv("https://docs.google.com/spreadsheets/d/1lq4zbQaxSPEaywdGdYc2P9TJwZwpAsUbGOGZ_qbC1Qg/export?format=csv&range=A3:D", function(error, data){
         var text = "";
         for(var i=0; i<1; i++){
-            text += i+1 + " 名前 " + data[i].Name + "</a> " + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
+            text +=" 名前 " + data[i].Name + data[i].Timestamp;
         }
         d3.select("#comments").html(text);
     });
